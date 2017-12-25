@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	你好吗？
+	<div></div>
+</body>
+<script src="./javascripts/jquery/dist/jquery.js"></script>
+<script>
+	$.ajax({
+		url:'/users/bar',
+		type:'get',
+		data: {action:"box"},
+		success: function (data) {
+			console.log(data)
+		}
+	})
+</script>
+</html>
