@@ -5,7 +5,7 @@
 	<title>Document</title>
 </head>
 <body>
-	你好吗？
+	hello world
 	<div></div>
 </body>
 <script src="./javascripts/jquery/dist/jquery.js"></script>
@@ -14,6 +14,15 @@
 		url:'/users/bar',
 		type:'get',
 		data: {action:"box"},
+		success: function (data) {
+			console.log(data)
+		}
+	})
+
+		$.ajax({
+		url:'/users/register',
+		type:'post',
+		data: {username:"duze", password:"123456",mobile:'1570766800'},
 		success: function (data) {
 			console.log(data)
 		}
